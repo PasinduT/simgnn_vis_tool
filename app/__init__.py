@@ -42,10 +42,10 @@ def loadModel():
     return trainer
 
 def loadDataset():
-    with open('something/dataset.json') as f:
+    with open('app/dataset.json') as f:
         dataset = json.load(f)
 
-    with open('something/graph_embeddings.json') as f:
+    with open('app/graph_embeddings.json') as f:
         embeddings = json.load(f)
 
     return dataset, embeddings
