@@ -1,6 +1,7 @@
 # Visualization Tool for SimGNN
 
-To run simply type
+Needs a link to the SimGNN repo setup on your computer and then linked
+in `__init__.py`. Afer which to run, simply type
 
 ```
 export FLASK_APP=app
