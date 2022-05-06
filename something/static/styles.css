@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    vertical-align: top;
+    width: 350px;
+    height: 100%;
+    display: inline-block;
+    box-shadow: 5px solid black;
+    padding: .5em;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.mainpanel {
+    position: fixed;
+    width: calc(100% - 355px);
+    left: 350px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    vertical-align: top;
+    overflow-y: auto;
+}
+
+
+.text-something {
+    color: #fff;
+    fill: #fff;
+}
+
+svg, table {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+#table-node {
+    display: inline-block;
+    padding: .3em;
+    height: 300px;
+    overflow-y: auto;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+select {
+    width: 90%;
+    display: block;
+}
+
+.svg-label {
+    color: black;
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    z-index: 200;
+    background-color: rgb(230, 230, 230);
+}
+
+.sidebar .svg-label {
+    background-color: white;
+}
+
+td {
+    padding: 0 0.3em;
+}
+
+#ul-graph {
+    height: 200px;
+    overflow-y: auto;
+}
+

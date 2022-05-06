@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<GraphCollection xmlns:ns="http://www.iam.unibe.ch/%7Emneuhaus/FAN/1.0">
+   <fingerprints base="/home/fkistat/DB/molecules/gxl-a400-i1600" classmodel="henry5" count="1500">
+   </fingerprints>
+</GraphCollection>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script src="{{ url_for('static', filename='d3.v7.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
+    <title>Tool</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <h4>Graph Pair</h4>
+            <div>
+                <input type="text" list="datalist-graph" id="input-graph1"/>
+            </div>
+            <div>
+                <input type="text" list="datalist-graph" id="input-graph2"/>
+            </div>
+            <datalist id="datalist-graph"></datalist>
+            <div><button id="btn-load">Load graphs</button></div>
+        </div>
+        <div><h4>Predicted similarity:</h4> <span id="span-predicted"></span></div>
+        <div>
+            <h4>Highlighted Graphs</h4>
+            <div style="position: relative; display: inline-block;">
+                <label for="svg-graph" class="svg-label">Graph Embeddings</label>
+                <svg id="svg-graph"></svg>
+            </div>
+            <ul id="ul-graph"></ul>
+        </div>
+    </div>
+    <div class="mainpanel">
+        <div>
+            <svg id="svg-graph1"></svg>
+            <svg id="svg-graph2"></svg>
+        </div>
+        <div>
+            <div style="position: relative; display: inline-block;" id="div-node">
+                <label for="svg-node" class="svg-label">Node Embeddings</label>
+                <svg id="svg-node"></svg>
+            </div>
+            <table id="table-node">
+                <th>
+                    <td>Id</td>
+                    <td>Label</td>
+                </th>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>
